@@ -28,7 +28,7 @@ function UpdateTime() // Increment our server time
     }
 }
 
-jcmp.events.Add('PlayerVerified', player => {
+jcmp.events.Add('PlayerReady', player => {
     jcmp.events.CallRemote('SyncTime', player, minute, hour, timestep);
 })
 
